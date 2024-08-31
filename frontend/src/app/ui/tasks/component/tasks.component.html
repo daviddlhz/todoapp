@@ -1,0 +1,10 @@
+<div class="container d-flex flex-column align-items-center justify-content-center vh-100">
+    <h1 class="mb-4">Todo App</h1>
+
+    <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#taskModal">+ Add Task</button>
+
+    <app-task-modal (taskAdded)="addTask($event)"></app-task-modal>
+
+    <app-task-card *ngFor="let task of tasks" [task]="task" (taskUpdated)="updateTask($event) "></app-task-card>
+</div>
+
