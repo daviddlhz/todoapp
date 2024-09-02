@@ -72,7 +72,10 @@ La interfaz de usuario está diseñada para:
     ```bash
      git clone https://github.com/daviddlhz/todoapp.git
     ```
-
+- Nos movemos al proyecto descargado
+  ```bash
+     cd todoapp
+    ```
 ## Ejecución del Proyecto
 
 ### Configuración y Ejecución Simultánea del Backend y Frontend
