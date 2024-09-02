@@ -70,7 +70,7 @@ La interfaz de usuario está diseñada para:
 
 - Ejecutamos el siguiente comando para descargar el proyecto en nuestra maquina local
     ```bash
-     https://github.com/daviddlhz/todoapp.git
+     git clone https://github.com/daviddlhz/todoapp.git
     ```
 
 ## Ejecución del Proyecto
