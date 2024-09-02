@@ -36,12 +36,12 @@
 
 - Ejecutamos el siguiente comando para descargar el proyecto en nuestra maquina local
     ```bash
-     git clone https://github.com/daviddlhz/todoapp.git
+    git clone https://github.com/daviddlhz/todoapp.git
     ```
 - Nos movemos al proyecto descargado
   ```bash
-     cd todoapp
-    ```
+  cd todoapp
+  ```
 ### Ejecución del Proyecto
 
 #### Configuración y Ejecución Simultánea del Backend y Frontend
