@@ -31,3 +31,35 @@
 - **Frontend**: Angular (con Angular SSR para SEO), Bootstrap.
 - **Backend**: Django, Django REST Framework.
 - **Base de Datos**: SQLite (por defecto en el entorno de desarrollo).
+
+### Instalacion del proyecto
+
+- Ejecutamos el siguiente comando para descargar el proyecto en nuestra maquina local
+    ```bash
+     git clone https://github.com/daviddlhz/todoapp.git
+    ```
+- Nos movemos al proyecto descargado
+  ```bash
+     cd todoapp
+    ```
+### Ejecución del Proyecto
+
+#### Configuración y Ejecución Simultánea del Backend y Frontend
+
+Para correr ambos proyectos (frontend y backend) simultáneamente, sigue estos pasos:
+
+1. **Instalar dependencias en ambos proyectos**:
+   - En el directorio raiz del proyecto debemos ejecutar el comando:
+     ```bash
+     npm run install:all
+     ```
+
+2. **Ejecutar ambos proyectos**:
+   - Luego de realizar las instalaciones de las dependencias de ambos proyectos ejecutaremos el siguiente comando:
+     ```bash
+     npm run start:all
+     ```
+
+De esta manera podremos ejecutar el proyecto y listo solamente probamos la app en la ruta de localhost que indica la consola.
+
+### Desarrollado por David De La Hoz
