@@ -2,7 +2,8 @@
   "name": "todoapp",
   "version": "1.0.0",
   "scripts": {
-    "install:all": "cd backend && pip install -r requirements.txt && cd ../frontend && npm install",
+    "install:all": "cd backend && pip install -r requirements.txt && npm run initialize && cd ../frontend && npm install",
+    "initialize": "cd backend && python initialize.py",
     "start:backend": "cd backend && python manage.py runserver",
     "start:frontend": "cd frontend && npm run start",
     "start:all": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
