@@ -80,13 +80,13 @@ La interfaz de usuario está diseñada para:
 Para correr ambos proyectos (frontend y backend) simultáneamente, sigue estos pasos:
 
 1. **Instalar dependencias en ambos proyectos**:
-   - En el directorio raiz del proyecto debemmos ejecutar el comando:
+   - En el directorio raiz del proyecto debemos ejecutar el comando:
      ```bash
      npm run install:all
      ```
 
 2. **Ejecutar ambos proyectos**:
-   - Luego de realizar las instalaciones de las dependnecias de ambos proyectos ejecutaremos el siguiente comando:
+   - Luego de realizar las instalaciones de las dependencias de ambos proyectos ejecutaremos el siguiente comando:
      ```bash
      start:all
      ```
