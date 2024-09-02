@@ -88,7 +88,7 @@ Para correr ambos proyectos (frontend y backend) simultáneamente, sigue estos p
 2. **Ejecutar ambos proyectos**:
    - Luego de realizar las instalaciones de las dependencias de ambos proyectos ejecutaremos el siguiente comando:
      ```bash
-     start:all
+     npm run start:all
      ```
 
 De esta manera podremos ejecutar el proyecto y listo solamente probamos la app en la ruta de localhost que indica la consola.
