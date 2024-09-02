@@ -1,4 +1,4 @@
-# Prueba Técnica: Desarrollo de una Aplicación de Gestión de Tareas
+# Todo App: Desarrollo de una Aplicación de Gestión de Tareas
 
 ## Objetivo
 El objetivo de esta prueba técnica es evaluar tus habilidades como desarrollador full-stack en la construcción de una aplicación web sencilla para gestionar una lista de tareas.
