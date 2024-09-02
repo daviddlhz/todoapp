@@ -11,11 +11,17 @@ export class TaskModalComponent {
   newTask: TaskEntity = { title: '', description: '', status: TaskStatus.PEDING };
   @Output() taskAdded = new EventEmitter<TaskEntity>();
 
+  /**
+   * Adds a new task and emits the taskAdded event.
+   */
   addTask(): void {
     this.taskAdded.emit(this.newTask);
     this.resetForm();
   }
 
+  /**
+   * Resets the form to its initial state.
+   */
   resetForm(): void {
     this.newTask = { title: '', description: '', status: TaskStatus.PEDING };
   }

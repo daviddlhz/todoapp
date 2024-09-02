@@ -1,15 +1,17 @@
-import { Component } from "@angular/core";
-import { TaskEntity } from "../../../domain/entities/task.entity";
-import { TaskService } from "../../../core/services/task.service";
+import { Component, OnInit } from '@angular/core';
+import { TaskEntity } from '../../../domain/entities/task.entity';
+import { TaskService } from '../../../core/services/task.service';
 
 @Component({
   selector: 'task-component',
   templateUrl: './tasks.component.html',
 })
-export class TaskComponent {
+export class TaskComponent implements OnInit {
   tasks: TaskEntity[] = [];
 
-  constructor(private taskService: TaskService) {
+  constructor(private taskService: TaskService) {  }
+  
+  ngOnInit(): void {
     this.loadTasks();
   }
 
@@ -25,7 +27,7 @@ export class TaskComponent {
     this.taskService.updateTask(task).subscribe(() => this.loadTasks());
   }
 
-  deleteTask(task: TaskEntity) {
-    this.tasks = this.tasks.filter((t) => t.id !== task.id);
+  deleteTask(task: TaskEntity): void {
+    this.taskService.deleteTask(task.id!).subscribe(() => this.loadTasks());
   }
 }

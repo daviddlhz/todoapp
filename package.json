@@ -1,11 +1,15 @@
 {
   "name": "todoapp",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install:all": "cd backend && pip install -r requirements.txt && cd ../frontend && npm install",
+    "start:backend": "cd backend && python manage.py runserver",
+    "start:frontend": "cd frontend && npm run start",
+    "start:all": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
   },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "author": "daviddlhz",
+  "license": "ISC"
 }
